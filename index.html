@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Webpack -->
+    <link rel="stylesheet" href="./dist/bundle.css" />
+    <title>Basic routing</title>
+  </head>
+
+
+  <body>
+
+    <header class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+
+        <h1 class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">The Hyper Programe</a></h1>
+
+        <form class="search-form">
+          <button type="submit" class="search-button"></button>
+          <input type="text" class="search" id="search" placeholder="Find a game...">
+        </form>
+
+      </div>
+    </header>
+
+    <h1 class="title">Welcome,</h1>
+    <p class="description">The Hyper Progame is the world’s premier event for computer and video games and related products. At The Hyper Progame,
+      the video game industry’s top talent pack the Los Angeles Convention Center, connecting tens of thousands of the best,
+      brightest, and most innovative in the interactive entertainment industry. For three exciting days, leading-edge companies,
+      groundbreaking new technologies, and never-before-seen products will be showcased. The Hyper Progame connects you
+      with both new and existing partners, industry executives, gamers, and social influencers providing unprecedented exposure</p>
+
+        
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        Platform : any
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#" onclick="sort('All')">All</a></li>
+        <li><a class="dropdown-item" href="#" onclick="sort('PS4')">PlayStation</a></li>
+        <li><a class="dropdown-item" href="#" onclick="sort('Xbox')">Xbox</a></li>
+        <li><a class="dropdown-item" href="#" onclick="sort('Switch')">Switch</a></li>
+        <li><a class="dropdown-item" href="#" onclick="sort('PC')">PC</a></li>
+        <li><a class="dropdown-item" href="#" onclick="sort('Mobile')">Mobile</a></li>
+        <li><a class="dropdown-item" href="#" onclick="sort('Linux')">Linux</a></li>
+      </ul>
+    </div>
+    <script>
+      function sort(critere) {
+        console.log('Trie par', critere);
+        //  logique de tri à reporter plus tard dans le JS
+      }
+    </script>
+    
+    
+    <div class="page-content" id="list"></div>
+
+    <div class="show-more-container">
+      <button class="btn btn-primary" id="show-more">Show More</button>
+    </div>
+
+
+
+    <div class="red mb-2"></div>
+    <p class="copyright">Robena @ 2024 - Fictionnal website for exercice</p>
+
+    
+        
+          
+            
+   
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- Webpack -->
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>
+
+
